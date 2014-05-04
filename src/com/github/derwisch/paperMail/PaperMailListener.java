@@ -48,7 +48,7 @@ public class PaperMailListener implements Listener {
         Block clickedBlock = event.getClickedBlock(); 
         if(clickedBlock != null && ((event.getClickedBlock().getType().name() == "SIGN") || (event.getClickedBlock().getType().name() == "SIGN_POST") || (event.getClickedBlock().getType().name() == "WALL_SIGN"))) {
             Sign s = (Sign)event.getClickedBlock().getState();
-            if(s.getLine(1).toLowerCase().contains(SignText)) {
+            if(s.getLine(1).equalsIgnoreCase(SignText)) {
                 if (event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) {
                 	new PaperMailGUI(player).Show();
                 } else if (event.getAction().equals(Action.LEFT_CLICK_BLOCK)) {

@@ -33,7 +33,7 @@ public class Settings {
 	public static String InboxGuiTitle = "Postfach:";
 	public static String CreateMailItemLore = "Nimm dies zur Hand, um einen neuen Brief zu verfassen.";
 	public static String MailItemIngredients = "PAPER,FEATHER,INK_SACK";
-	public static String SignText = "[Briefkasten]";
+	public static String SignText = "Briefkasten";
 	
 	public static List<String> InboxPlayers = new ArrayList<String>();
 	

@@ -20,7 +20,7 @@ general:
   InboxGuiTitle: 'Postfach:'
   CreateMailItemLore: 'Nimm dies zur Hand, um einen neuen Brief zu verfassen.'
   MailItemIngredients: 'PAPER,FEATHER,INK_SACK'
-  SignText: '[Briefkasten]'
+  SignText: Briefkasten
 messages:
   inbox-full-send: Der Briefkasten von %recipient% ist voll, die Gegenstände wurden an dich zurückgeschickt.
   ingredient-missing: Du besitzt kein %item%, um einen neuen Brief zu erstellen.

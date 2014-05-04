@@ -59,7 +59,7 @@ public class PaperMailEconomy{
 	public static void takeMoney(Double price, Player player){
     if (!(PaperMail.isGoldIngot())) {
 				PaperMail.economy.withdrawPlayer(player.getName(), price.doubleValue());
-				player.sendMessage(ChatColor.GREEN + "%price% wurden als Gebühren genommen!".replace("%price%", new StringBuilder().append(ChatColor.WHITE).append(price.toString()).toString()) + ChatColor.RESET);   
+				player.sendMessage(ChatColor.GREEN + "%price% wurden angehangen!".replace("%price%", new StringBuilder().append(ChatColor.WHITE).append(price.toString()).toString()) + ChatColor.RESET);   
     }
    else {
 	   String currencyName = Material.getMaterial(Settings.CurrencyItemID).toString();
@@ -72,7 +72,7 @@ public class PaperMailEconomy{
        sb1.append("");
        sb1.append(currencyName);
        currencyName = sb1.toString().replace("_", " ");
-       player.sendMessage(ChatColor.WHITE + "%price%".replace("%price%", sb.append(ChatColor.WHITE)).toString() + " " + ChatColor.YELLOW + "%currencyName%".replace("%currencyName%", currencyName) + ChatColor.GREEN + " " + "wurden als Gebühr genommen!" + ChatColor.RESET);    
+       player.sendMessage(ChatColor.WHITE + "%price%".replace("%price%", sb.append(ChatColor.WHITE)).toString() + " " + ChatColor.YELLOW + "%currencyName%".replace("%currencyName%", currencyName) + ChatColor.GREEN + " " + "wurden angehangen!" + ChatColor.RESET);    
       }
     }
     
